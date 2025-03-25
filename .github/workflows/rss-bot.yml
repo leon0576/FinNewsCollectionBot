@@ -28,8 +28,8 @@ jobs:
 
       - name: 🔑 设置环境变量
         run: |
-          echo "OPENAI_API_KEY=sk-5610370b94b647c8bc0e133ab5da6b9b" >> $GITHUB_ENV
-          echo "SERVER_CHAN_KEYS=SCT274197TfBmvB1UoEAIoiEl78rIVzJhi" >> $GITHUB_ENV
+          echo "OPENAI_API_KEY=${{sk-5610370b94b647c8bc0e133ab5da6b9b}}" >> $GITHUB_ENV
+          echo "SERVER_CHAN_KEYS=${{SCT274197TfBmvB1UoEAIoiEl78rIVzJhi}}" >> $GITHUB_ENV
 
       - name: 🚀 运行脚本
         run: python financebot.py
